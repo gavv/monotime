@@ -19,3 +19,13 @@ func TestNow(t *testing.T) {
 		}
 	}
 }
+
+func TestSince(t *testing.T) {
+	for i := 0; i < 100; i++ {
+		ts := Now()
+		d := Since(ts)
+		if d < 0 {
+			t.Fatalf("d=%d should be greater than or equal to zero", d)
+		}
+	}
+}

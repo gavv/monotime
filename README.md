@@ -20,20 +20,20 @@ See [GoDoc](https://godoc.org/github.com/gavv/monotime).
 package main
 
 import (
-	"fmt"
-	"github.com/gavv/monotime"
-	"time"
+    "fmt"
+    "github.com/gavv/monotime"
+    "time"
 )
 
 func main() {
-	var start, end time.Duration
+    var start, elapsed time.Duration
 
-	start = monotime.Now()
-	time.Sleep(time.Millisecond)
-	end = monotime.Now()
+    start = monotime.Now()
+    time.Sleep(time.Millisecond)
+    elapsed = monotime.Since(start)
 
-	fmt.Println(end - start)
-	// Prints: 1.062759ms
+    fmt.Println(elapsed)
+    // Prints: 1.062759ms
 }
 ```
 
