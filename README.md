@@ -1,4 +1,4 @@
-# monotime [![GoDoc](https://godoc.org/github.com/gavv/monotime?status.svg)](https://godoc.org/github.com/gavv/monotime)
+# monotime [![GoDoc](https://godoc.org/github.com/gavv/monotime?status.svg)](https://godoc.org/github.com/gavv/monotime) [![Travis](https://img.shields.io/travis/gavv/httpexpect.svg)](https://travis-ci.org/gavv/monotime)
 
 This tiny module is a standalone version of [`goarista/atime`](https://github.com/aristanetworks/goarista#atime).
 
