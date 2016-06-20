@@ -4,9 +4,7 @@
 
 package monotime
 
-import (
-	"testing"
-)
+import "testing"
 
 func TestNow(t *testing.T) {
 	for i := 0; i < 100; i++ {
