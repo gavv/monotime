@@ -7,12 +7,9 @@ package monotime
 
 import (
 	"time"
-	"unsafe"
-)
 
-// Make goimports import the unsafe package, which is required to be able
-// to use //go:linkname
-var _ = unsafe.Sizeof(0)
+	_ "unsafe"
+)
 
 //go:noescape
 //go:linkname nanotime runtime.nanotime
