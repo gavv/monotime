@@ -15,11 +15,17 @@ import (
 func nanotime() int64
 
 // Now returns the current time in nanoseconds from a monotonic clock.
+//
 // The time returned is based on some arbitrary platform-specific point in the
-// past. The time returned is guaranteed to increase monotonically at a
-// constant rate, unlike time.Now() from the Go standard library, which may
-// slow down, speed up, jump forward or backward, due to NTP activity or leap
+// past. The time returned is guaranteed to increase monotonically without
+// notable jumps, unlike time.Now() from the Go standard library, which may
+// jump forward or backward significantly due to system time changes or leap
 // seconds.
+//
+// It's implemented using runtime.nanotime(), which uses CLOCK_MONOTONIC on
+// Linux. Note that unlike CLOCK_MONOTONIC_RAW, CLOCK_MONOTONIC is affected
+// by time changes. However, time changes never cause clock jumps; instead,
+// clock frequency is adjusted slowly.
 func Now() time.Duration {
 	return time.Duration(nanotime())
 }
