@@ -2,7 +2,7 @@
 // Use of this source code is governed by the Apache License 2.0
 // that can be found in the COPYING file.
 
-// Package monotime exports monotonic clock function from Go runtime package.
+// Package monotime provides functions to access monotonic clock source.
 package monotime
 
 import (
