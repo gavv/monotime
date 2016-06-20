@@ -7,7 +7,7 @@ package monotime
 
 import (
 	"time"
-	_ "unsafe"
+	_ "unsafe" // required to use //go:linkname
 )
 
 //go:noescape
