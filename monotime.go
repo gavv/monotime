@@ -7,7 +7,6 @@ package monotime
 
 import (
 	"time"
-
 	_ "unsafe"
 )
 
