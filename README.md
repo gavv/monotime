@@ -2,7 +2,7 @@
 
 This tiny Go package is a standalone and slightly enhanced version of [`goarista/atime`](https://github.com/aristanetworks/goarista#atime).
 
-It provides `monotime.Now()` function, which returns current time from monotonic clock source. It's implemented using unexported `runtime.nanotime()` function from Go runtime.
+It provides `monotime.Now()` function, which returns current time from monotonic clock source. It's implemented using unexported `runtime.nanotime()` function from Go runtime. It works on all platforms.
 
 ## Why?
 
