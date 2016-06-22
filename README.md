@@ -1,6 +1,6 @@
 # monotime [![GoDoc](https://godoc.org/github.com/gavv/monotime?status.svg)](https://godoc.org/github.com/gavv/monotime) [![Travis](https://img.shields.io/travis/gavv/monotime.svg)](https://travis-ci.org/gavv/monotime)
 
-This tiny Go module is a standalone and slightly enhanced version of [`goarista/atime`](https://github.com/aristanetworks/goarista#atime).
+This tiny Go package is a standalone and slightly enhanced version of [`goarista/atime`](https://github.com/aristanetworks/goarista#atime).
 
 It provides `monotime.Now()` function, which returns current time from monotonic clock source. It's implemented using unexported `runtime.nanotime()` function from Go runtime.
 
