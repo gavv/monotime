@@ -1,6 +1,6 @@
 # monotime [![GoDoc](https://godoc.org/github.com/gavv/monotime?status.svg)](https://godoc.org/github.com/gavv/monotime) [![Travis](https://img.shields.io/travis/gavv/monotime.svg)](https://travis-ci.org/gavv/monotime)
 
-This tiny Go package is a standalone and slightly enhanced version of [`goarista/atime`](https://github.com/aristanetworks/goarista#atime).
+This tiny Go package is a standalone and slightly enhanced version of [`goarista/monotime`](https://github.com/aristanetworks/goarista#monotime).
 
 It provides `monotime.Now()` function, which returns current time from monotonic clock source. It's implemented using unexported `runtime.nanotime()` function from Go runtime. It works on all platforms.
 
@@ -21,8 +21,9 @@ package main
 
 import (
     "fmt"
-    "github.com/gavv/monotime"
     "time"
+
+    "github.com/gavv/monotime"
 )
 
 func main() {
@@ -39,10 +40,10 @@ func main() {
 
 ## Similar modules
 
-* [`aristanetworks/goarista/atime`](https://github.com/aristanetworks/goarista#atime) (this module is based on it)
+* [`aristanetworks/goarista/monotime`](https://github.com/aristanetworks/goarista#monotime) (this module is based on it)
 * [`spacemonkeygo/monotime`](https://github.com/spacemonkeygo/monotime) (current `runtime.nanotime()` is more complete)
-* [`davecheney/junk/clock`](https://github.com/davecheney/junk/tree/master/clock) (only Linux)
-* [`jaracil/clk`](https://github.com/jaracil/clk) (only Linux)
+* [`davecheney/junk/clock`](https://github.com/davecheney/junk/tree/master/clock) (Linux-only)
+* [`jaracil/clk`](https://github.com/jaracil/clk) (Linux-only)
 
 ## License
 
