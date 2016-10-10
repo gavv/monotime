@@ -38,9 +38,9 @@ func main() {
 }
 ```
 
-## Similar modules
+## Similar packages
 
-* [`aristanetworks/goarista/monotime`](https://github.com/aristanetworks/goarista#monotime) (this module is based on it)
+* [`aristanetworks/goarista/monotime`](https://github.com/aristanetworks/goarista#monotime) (this package is based on it)
 * [`spacemonkeygo/monotime`](https://github.com/spacemonkeygo/monotime) (current `runtime.nanotime()` is more complete)
 * [`davecheney/junk/clock`](https://github.com/davecheney/junk/tree/master/clock) (Linux-only)
 * [`jaracil/clk`](https://github.com/jaracil/clk) (Linux-only)
