@@ -4,9 +4,13 @@ This tiny Go package is a standalone and slightly enhanced version of [`goarista
 
 It provides `monotime.Now()` function, which returns current time from monotonic clock source. It's implemented using unexported `runtime.nanotime()` function from Go runtime. It works on all platforms.
 
-## Why?
+## Not needed for Go 1.9+
 
-`time.Now()` function from standard library returns *real time* (`CLOCK_REALTIME` in POSIX) which can jump forwards and backwards as the system time is changed.
+Starting from Go 1.9, the standad `time` package transparently uses [Monotonic Clocks](https://golang.org/pkg/time/#hdr-Monotonic_Clocks) when necessary, so this package is no longer relevant.
+
+## Synopsis
+
+In Go versions before 1.9, `time.Now()` function from standard library returns *real time* (`CLOCK_REALTIME` in POSIX) which can jump forwards and backwards as the system time is changed.
 
 For time measurements, *monotonic time* (`CLOCK_MONOTONIC` or `CLOCK_MONOTONIC_RAW` on Linux) is often preferred, which is strictly increasing, without (notable) jumps.
 
