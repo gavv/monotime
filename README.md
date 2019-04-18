@@ -6,7 +6,9 @@ It provides `monotime.Now()` function, which returns current time from monotonic
 
 ## Not needed for Go 1.9+
 
-Starting from Go 1.9, the standad `time` package transparently uses [Monotonic Clocks](https://golang.org/pkg/time/#hdr-Monotonic_Clocks) when necessary, so this package is no longer relevant.
+Starting from Go 1.9, the standard `time` package transparently uses [Monotonic Clocks](https://golang.org/pkg/time/#hdr-Monotonic_Clocks) when necessary, so this package is no longer relevant.
+
+This repository has been archived and is no longer maintained.
 
 ## Synopsis
 
